@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.nav_links li {
+  margin-left: 50px;
+}
+
+.nav_links li:last-child {
+  margin-right: 300px;
+}

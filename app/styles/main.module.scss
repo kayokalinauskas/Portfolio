@@ -1,0 +1,29 @@
+$background-color: #121214;
+$green: #04d361;
+$primary-text: #e1e1e6;
+$grey: #a8a8b3;
+$secondary-background-color: #101011;
+
+.jetbrains {
+  font-family: var(--font-jetbrains);
+}
+
+.green {
+  color: $green;
+}
+
+.about_section div {
+  margin-left: 20px;
+  margin-right: 13rem;
+}
+
+.about_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about_section div p {
+  max-width: 400px;
+}
