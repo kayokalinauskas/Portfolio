@@ -86,4 +86,13 @@ $secondary-background-color: #101011;
 }
 
 @media (max-width: 780px) {
+  .image-container {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+  }
+
+  .about-section {
+    margin-top: 0px;
+  }
 }
