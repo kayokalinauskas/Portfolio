@@ -54,3 +54,21 @@ $secondary-background-color: #101011;
   font-weight: 700;
   font-size: 1.2rem;
 }
+
+@media (max-width: 1279px) {
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
