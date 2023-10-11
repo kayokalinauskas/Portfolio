@@ -1,11 +1,11 @@
 {
-    "teste": "testing in english",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact",
+  "teste": "testing in english",
+  "about": "About",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact",
 
-    "greeting": "Hi, I'm",
-    "frontenddev": "Front-end Developer",
-    "presentation": "I'm a dedicated programmer, seeking solutions with efficient code and a constant commitment to learning."
+  "greeting": "Hi, I'm",
+  "frontenddev": "Front-end Developer",
+  "presentation": "I'm a dedicated programmer, seeking solutions with efficient code and a constant commitment to learning."
 }
