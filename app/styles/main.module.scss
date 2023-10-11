@@ -8,9 +8,9 @@ $secondary-background-color: #101011;
   font-family: var(--font-jetbrains);
 }
 
-.about-section div {
-  margin-left: 20px;
-  margin-right: 13rem;
+.presentation-div {
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 .greeting {
@@ -37,7 +37,7 @@ $secondary-background-color: #101011;
   margin-top: 100px;
 }
 
-.about-section div p {
+.presentation-div p {
   max-width: 400px;
 }
 
@@ -55,14 +55,19 @@ $secondary-background-color: #101011;
   font-size: 1.2rem;
 }
 
+.image-container {
+  position: relative;
+  min-width: 600px;
+  min-height: 600px;
+}
+
 @media (max-width: 1279px) {
   .about-section {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-
-  .about-section div {
+  .presentation-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,5 +75,11 @@ $secondary-background-color: #101011;
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+
+  .image-container {
+    position: relative;
+    min-width: 400px;
+    min-height: 400px;
   }
 }
