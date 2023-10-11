@@ -7,10 +7,11 @@ export default async function Main({ locale, namespaces }) {
   return (
     <section className={styles["about-section"]}>
       <div>
-        <p>{t("greeting")}</p>
+        <p className={styles.greeting}>{t("greeting")}</p>
         <h1>Kayo Kalinauskas</h1>
         <h2 className={styles.subtitle}>&lt;{t("frontenddev")}/&gt;</h2>
         <p>{t("presentation")}</p>
+        <button>{t("resumedownload")}</button>
       </div>
       <Image
         src="./assets/ProgrammerImage.svg"
