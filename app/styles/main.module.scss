@@ -66,6 +66,7 @@ $secondary-background-color: #101011;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
   }
   .presentation-div {
     display: flex;
@@ -82,4 +83,7 @@ $secondary-background-color: #101011;
     min-width: 400px;
     min-height: 400px;
   }
+}
+
+@media (max-width: 780px) {
 }

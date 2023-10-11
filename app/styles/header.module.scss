@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  margin: 20px;
   align-items: center;
 }
 
@@ -35,4 +35,10 @@
 
 .nav-links li {
   margin-left: 50px;
+}
+
+@media (max-width: 780px) {
+  .nav-links {
+    display: none;
+  }
 }
