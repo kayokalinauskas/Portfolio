@@ -8,22 +8,23 @@ $secondary-background-color: #101011;
   font-family: var(--font-jetbrains);
 }
 
-.green {
+.subtitle {
   color: $green;
+  font-family: var(--font-jetbrains);
 }
 
-.about_section div {
+.about-section div {
   margin-left: 20px;
   margin-right: 13rem;
 }
 
-.about_section {
+.about-section {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
 
-.about_section div p {
+.about-section div p {
   max-width: 400px;
 }

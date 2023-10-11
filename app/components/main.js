@@ -1,17 +1,16 @@
 import styles from "../styles/main.module.scss";
 import Image from "next/image";
+import initTranslations from "../i18n";
 
-export default function Main() {
+export default async function Main({ locale, namespaces }) {
+  const { t } = await initTranslations(locale, namespaces);
   return (
-    <section className={styles.about_section}>
+    <section className={styles["about-section"]}>
       <div>
-        <p>Hi, I'm</p>
+        <p>{t("greeting")}</p>
         <h1>Kayo Kalinauskas</h1>
-        <h2 className={styles.green}>&lt;Front-end Developer /&gt;</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non
-          massa tincidunt, ullamcorper diam id, molestie nulla.
-        </p>
+        <h2 className={styles.subtitle}>&lt;{t("frontenddev")}/&gt;</h2>
+        <p>{t("presentation")}</p>
       </div>
       <Image
         src="./assets/ProgrammerImage.svg"

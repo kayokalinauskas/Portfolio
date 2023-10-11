@@ -1,5 +1,5 @@
 const i18nConfig = {
-  locales: ["pt-BR", "en", "en-US"],
+  locales: ["pt-BR", "en"],
   defaultLocale: "pt-BR",
   routingStrategy: "dynamicSegment",
 };

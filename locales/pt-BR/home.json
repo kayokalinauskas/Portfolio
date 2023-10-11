@@ -1,3 +1,12 @@
 {
-    "teste": "testando em português"
+    "teste": "testando em português",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato",
+
+    "greeting": "Oi, eu sou",
+    "frontenddev": "Desenvolvedor Front-End",
+    "presentation": "Sou um programador dedicado, buscando soluções com código eficiente e compromisso contínuo com a aprendizagem."
 }
+
