@@ -68,7 +68,7 @@ $secondary-background-color: #101011;
   max-width: 400px;
 }
 
-.main-section button {
+.resume-button {
   width: 322px;
   margin-top: 15px;
   height: 62px;
@@ -80,6 +80,7 @@ $secondary-background-color: #101011;
   color: $green;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .image-container {

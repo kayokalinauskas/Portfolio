@@ -1,7 +1,7 @@
 import styles from "../styles/main.module.scss";
 import Image from "next/image";
 import initTranslations from "../i18n";
-import { currentLocale } from "next-i18n-router";
+import Link from "next/link";
 
 export default async function Main({ locale, namespaces }) {
   const { t } = await initTranslations(locale, namespaces);
@@ -13,7 +13,14 @@ export default async function Main({ locale, namespaces }) {
 
         <h2 className={styles.subtitle}>&lt;{t("frontenddev")}/&gt;</h2>
         <p className={styles.presentation}>{t("presentation")}</p>
-        <button>{t("resumedownload")}</button>
+        <Link
+          href={`/assets/CV-Kayo-Kalinauskas-${locale}.pdf`}
+          target="_blank"
+        >
+          <button className={styles["resume-button"]}>
+            {t("resumedownload")}
+          </button>
+        </Link>
       </div>
       <div className={styles["image-container"]}>
         <Image src="./assets/ProgrammerImage.svg" fill={true} alt="Teste" />
