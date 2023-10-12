@@ -2,6 +2,8 @@ import Header from "../components/header";
 import Main from "../components/main";
 import initTranslations from "../i18n";
 import TranslationsProvider from "../components/TranslationsProvider";
+import About from "../components/about";
+import Skills from "../components/skills";
 
 const i18nNamespaces = ["home"];
 
@@ -13,6 +15,8 @@ export default async function Home({ params: { locale } }) {
       {/* <h1>{t("teste")}</h1> */}
       <Header namespaces={i18nNamespaces} locale={locale} />
       <Main namespaces={i18nNamespaces} locale={locale} />
+      <About />
+      <Skills />
     </TranslationsProvider>
   );
 }

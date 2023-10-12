@@ -17,10 +17,19 @@ $secondary-background-color: #101011;
   font-size: 1.2rem;
 }
 
-.about-section h1 {
-  font-size: 2rem;
-  // margin-bottom: 3px;
-  line-height: 2rem;
+.name {
+  display: inline-block;
+  // margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 3px solid white;
+  font-size: 1.5rem;
+  animation:
+    type 2s steps(20) 1s forwards,
+    blink 0.5s steps(1) infinite;
 }
 
 .subtitle {
@@ -30,18 +39,36 @@ $secondary-background-color: #101011;
   font-size: 1.8rem;
 }
 
-.about-section {
+@keyframes type {
+  to {
+    width: 16.5ch;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+.main-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  // margin-top: 100px;
+  height: 100vh;
 }
 
 .presentation-div p {
   max-width: 400px;
 }
 
-.about-section button {
+.main-section button {
   width: 322px;
   margin-top: 15px;
   height: 62px;
@@ -62,7 +89,7 @@ $secondary-background-color: #101011;
 }
 
 @media (max-width: 1279px) {
-  .about-section {
+  .main-section {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -92,7 +119,41 @@ $secondary-background-color: #101011;
     min-height: 300px;
   }
 
-  .about-section {
-    margin-top: 0px;
+  .main-section {
+    margin-top: 50px;
+  }
+
+  .presentation-div {
+    width: 90%;
+  }
+
+  .presentation {
+    font-size: 14px;
+  }
+
+  .greeting {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 339px) {
+  .name {
+    font-size: 14px;
+  }
+
+  .presentation {
+    font-size: 10px;
+  }
+
+  .greeting {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 18px;
   }
 }

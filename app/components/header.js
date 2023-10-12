@@ -48,7 +48,6 @@ export default function Header() {
     <header className={styles.header}>
       <a className={styles.logo}>&lt;kayokalinauskas&gt;</a>
       <a className={styles["logo-short"]}>&lt;kk&gt;</a>
-
       <ul className={`${styles["nav-links"]} ${isMobile ? styles.active : ""}`}>
         <li>{t("about")}</li>
         <li>{t("skills")}</li>
@@ -59,9 +58,9 @@ export default function Header() {
         className={`${styles.hamburgerMenu} ${isMobile ? styles.active : ""}`}
         onClick={toggleMobileMenu}
       >
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+        <div className={styles.hamburgerbar}></div>
+        <div className={styles.hamburgerbar}></div>
+        <div className={styles.hamburgerbar}></div>
       </div>
       <select onChange={handleChange} value={currentLocale}>
         <option value="pt-BR">Português</option>

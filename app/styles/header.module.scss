@@ -67,7 +67,7 @@
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #111;
+    background-color: #121214;
     // width: 100vh;
     // height: 100vh;
     width: 100%;
@@ -102,6 +102,29 @@
 
   .hamburgerMenu {
     display: flex;
-    background-color: #04d361;
+    justify-content: space-around;
+  }
+  .hamburgerbar {
+    border: solid 1px #fff;
+    border-radius: 1px;
+  }
+
+  .hamburgerMenu.active .hamburgerbar:nth-of-type(1) {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 142px;
+    height: 22px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  }
+  .hamburgerMenu.active .hamburgerbar:nth-of-type(2) {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 142px;
+    height: 22px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  }
+  .hamburgerMenu.active .hamburgerbar:nth-of-type(3) {
+    display: none;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
   }
 }
