@@ -6,6 +6,7 @@ import i18nConfig from "../../i18nConfig";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const { i18n } = useTranslation();
@@ -38,12 +39,14 @@ export default function Header() {
     "pt-BR": {
       value: "pt-BR",
       label: "Português",
-      flag: "./assets/br-flag.png",
+      flag: "/assets/br-flag.png",
+      alt: "Bandeira Brasileira",
     },
     en: {
       value: "en",
       label: "English",
-      flag: "./assets/uk-flag.png",
+      flag: "/assets/uk-flag.png",
+      alt: "United Kingdom Flag",
     },
   };
 
@@ -106,7 +109,12 @@ export default function Header() {
         className={`${styles.selector} ${selectorIsOpen ? styles.active : ""}`}
       >
         <div className={styles.select} onClick={handleSelectorButton}>
-          <img src={options2[currentLocale].flag} />
+          <Image
+            width={32}
+            height={32}
+            alt={options2[currentLocale].alt}
+            src={options2[currentLocale].flag}
+          />
           <span className={styles["language-label"]}>
             {options2[currentLocale].label}
           </span>

@@ -1,24 +1,22 @@
 .select {
   display: flex;
-  background-color: #29292c;
+  background-color: #f0f0f0;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 5px;
   flex: 33%;
+  color: #121212;
+  font-weight: 400;
+  width: 133px;
 }
 
 .selector {
   font-size: 14px;
   margin-left: 30px;
   cursor: pointer;
-}
-
-.selector img {
-  width: 26px;
-  margin-right: 10px;
 }
 
 .dropdown {
@@ -32,19 +30,23 @@
   vertical-align: middle;
   border-style: solid;
   border-width: 4px 4px 0 4px;
-  border-color: #fff transparent transparent transparent;
+  border-color: #121212 transparent transparent transparent;
   margin: 0 0 0 5px;
 }
 
 .selector.active .dropdown {
   display: flex;
   position: absolute;
-  flex-direction: column;
-  top: 60px;
+  flex-direction: row;
+  align-items: center;
+  top: 65px;
   right: 20px;
-  background-color: #29292c;
-  padding: 10px;
+  background-color: #f0f0f0;
+  padding: 5px;
   border-radius: 10px;
+  color: #121212;
+  width: 133px;
+  height: 42px;
 }
 
 .selector.active .dropdown img {
@@ -53,7 +55,10 @@
 
 .language {
   display: flex;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
+  justify-content: space-around;
   cursor: pointer;
 }
 
@@ -98,7 +103,7 @@
   text-decoration: none;
   color: inherit;
   // font-family: var(--font-jetbrains);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .nav-links a:first-child {
@@ -126,6 +131,20 @@
 @media (max-width: 1050px) {
   .language-label {
     display: none;
+  }
+  .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+  }
+
+  .select img {
+    margin: 0;
+  }
+
+  .selector.active .dropdown {
+    width: 65px;
   }
 }
 
@@ -190,14 +209,14 @@
   .hamburgerMenu.active .hamburgerbar:nth-of-type(1) {
     transform: rotate(-45deg);
     position: absolute;
-    right: 118px;
+    right: 125px;
     height: 22px;
     transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
   }
   .hamburgerMenu.active .hamburgerbar:nth-of-type(2) {
     transform: rotate(45deg);
     position: absolute;
-    right: 118px;
+    right: 125px;
     height: 22px;
     transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
   }
