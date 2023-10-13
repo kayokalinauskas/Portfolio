@@ -79,7 +79,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <a className={styles.logo}>&lt;kayokalinauskas&gt;</a>
-      <a className={styles["logo-short"]}>&lt;kk&gt;</a>
+      <a className={styles["logo-short"]}>&lt;kalinauskas&gt;</a>
       <div
         className={`${styles["nav-links"]} ${isMobile ? styles.active : ""}`}
       >
