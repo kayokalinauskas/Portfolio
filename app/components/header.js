@@ -19,17 +19,48 @@ export default function Header() {
     setIsMobile(!isMobile);
   };
 
-  const handleChange = (e) => {
-    const newLocale = e.target.value;
+  const [selectorIsOpen, setSelectorIsOpen] = useState(false);
 
-    // set cookie for next-i18n-router
+  const options = [
+    {
+      value: "pt-BR",
+      label: "Português",
+      flag: "./assets/br-flag.png",
+    },
+    {
+      value: "en",
+      label: "English",
+      flag: "./assets/uk-flag.png",
+    },
+  ];
+
+  const options2 = {
+    "pt-BR": {
+      value: "pt-BR",
+      label: "Português",
+      flag: "./assets/br-flag.png",
+    },
+    en: {
+      value: "en",
+      label: "English",
+      flag: "./assets/uk-flag.png",
+    },
+  };
+
+  const handleSelectorButton = () => {
+    setSelectorIsOpen(!selectorIsOpen);
+  };
+
+  const handleSelectLanguage = (e) => {
+    setSelectorIsOpen(false);
+    const newLocale = e.target.id;
+
     const days = 30;
     const date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     const expires = "; expires=" + date.toUTCString();
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
 
-    // redirect to the new locale path
     if (
       currentLocale === i18nConfig.defaultLocale &&
       !i18nConfig.prefixDefault
@@ -65,10 +96,42 @@ export default function Header() {
         <div className={styles.hamburgerbar}></div>
         <div className={styles.hamburgerbar}></div>
       </div>
-      <select onChange={handleChange} value={currentLocale}>
+      {/* <select onChange={handleChange} value={currentLocale}>
         <option value="pt-BR">Português</option>
         <option value="en">English</option>
-      </select>
+      </select> */}
+
+      {/* selector */}
+      <div
+        className={`${styles.selector} ${selectorIsOpen ? styles.active : ""}`}
+      >
+        <div className={styles.select} onClick={handleSelectorButton}>
+          <img src={options2[currentLocale].flag} />
+          <span className={styles["language-label"]}>
+            {options2[currentLocale].label}
+          </span>
+          <span>{options.forEach((option) => {})}</span>
+          <span className={styles["arrow-down"]}></span>
+        </div>
+        <div className={styles.dropdown}>
+          {options.map((language) =>
+            language.value !== currentLocale ? (
+              <div
+                id={language.value}
+                key={language.value}
+                className={styles.language}
+                onClick={handleSelectLanguage}
+              >
+                <img id={language.value} src={language.flag} />
+                <span id={language.value} className={styles["language-label"]}>
+                  {language.label}
+                </span>
+              </div>
+            ) : null,
+          )}
+        </div>
+      </div>
+      {/* selector */}
     </header>
   );
 }

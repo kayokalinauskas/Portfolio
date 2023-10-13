@@ -23,7 +23,12 @@ export default async function Main({ locale, namespaces }) {
         </Link>
       </div>
       <div className={styles["image-container"]}>
-        <Image src="./assets/ProgrammerImage.svg" fill={true} alt="Teste" />
+        <Image
+          src="./assets/ProgrammerImage.svg"
+          fill={true}
+          alt="Teste"
+          priority={true}
+        />
       </div>
     </section>
   );
