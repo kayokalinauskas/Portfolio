@@ -6,10 +6,15 @@ import Link from "next/link";
 import LanguageChanger from "./LanguageSelector";
 
 export default function Header() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobile(!isMobile);
+    setIsNavMenuOpen(!isNavMenuOpen);
+    console.log("teste");
+  };
+
+  const handleClickNav = () => {
+    setIsNavMenuOpen(!isNavMenuOpen);
   };
 
   const { t } = useTranslation();
@@ -19,7 +24,10 @@ export default function Header() {
       <a className={styles["logo-short"]}>&lt;kalinauskas&gt;</a>
 
       <div
-        className={`${styles["nav-links"]} ${isMobile ? styles.active : ""}`}
+        className={`${styles["nav-links"]} ${
+          isNavMenuOpen ? styles.active : ""
+        }`}
+        onClick={handleClickNav}
       >
         <Link href="#about">{t("about")}</Link>
         <Link href="#skills">{t("skills")}</Link>
@@ -27,7 +35,9 @@ export default function Header() {
         <Link href="mailto:kalinauskas@live.com">{t("contact")}</Link>
       </div>
       <div
-        className={`${styles.hamburgerMenu} ${isMobile ? styles.active : ""}`}
+        className={`${styles.hamburgerMenu} ${
+          isNavMenuOpen ? styles.active : ""
+        }`}
         onClick={toggleMobileMenu}
       >
         <div className={styles.hamburgerbar}></div>

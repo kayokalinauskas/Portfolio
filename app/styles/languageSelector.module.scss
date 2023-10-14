@@ -1,6 +1,8 @@
+@use "./variables" as *;
+
 .select {
   display: flex;
-  background-color: #f0f0f0;
+  background-color: $primary-text;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +10,7 @@
   border-radius: 10px;
   padding: 5px;
   flex: 33%;
-  color: #121212;
+  color: $background-color;
   font-weight: 400;
   width: 133px;
 }
@@ -30,7 +32,7 @@
   vertical-align: middle;
   border-style: solid;
   border-width: 4px 4px 0 4px;
-  border-color: #121212 transparent transparent transparent;
+  border-color: $background-color transparent transparent transparent;
   margin: 0 0 0 5px;
 }
 
@@ -41,10 +43,10 @@
   align-items: center;
   top: 65px;
   right: 20px;
-  background-color: #f0f0f0;
+  background-color: $primary-text;
   padding: 5px;
   border-radius: 10px;
-  color: #121212;
+  color: $background-color;
   width: 133px;
   height: 42px;
 }

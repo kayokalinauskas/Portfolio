@@ -1,8 +1,4 @@
-$background-color: #121214;
-$green: #04d361;
-$primary-text: #e1e1e6;
-$grey: #a8a8b3;
-$secondary-background-color: #101011;
+@use "./variables" as *;
 
 .jetbrains {
   font-family: var(--font-jetbrains);
@@ -19,7 +15,6 @@ $secondary-background-color: #101011;
 
 .name {
   display: inline-block;
-  // margin-bottom: 1rem;
   letter-spacing: 2px;
   font-weight: 600;
   white-space: nowrap;
@@ -53,7 +48,7 @@ $secondary-background-color: #101011;
   }
 
   50% {
-    border-color: white;
+    border-color: $primary-text;
   }
 }
 
@@ -76,8 +71,8 @@ $secondary-background-color: #101011;
   flex-shrink: 0;
   border: 1px solid $green;
   border-radius: 5px;
-  background-color: #131313;
-  color: #fff;
+  background-color: $background-color;
+  color: $primary-text;
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
