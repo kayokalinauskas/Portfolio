@@ -3,10 +3,6 @@ import { Poppins } from "next/font/google";
 import "../styles/global.scss";
 import styles from "../styles.module.scss";
 import i18nConfig from "../../i18nConfig.js";
-import { Suspense } from "react";
-import Loading from "./loading";
-
-let locales = ["en-US", "pt-BR"];
 
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
@@ -33,9 +29,7 @@ export const metadata = {
 export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale} className={`${jetbrains.variable} ${poppins.variable}`}>
-      <body className={styles.body}>
-        <Suspense fallback={<Loading />}>{children}</Suspense>
-      </body>
+      <body className={styles.body}>{children}</body>
     </html>
   );
 }
