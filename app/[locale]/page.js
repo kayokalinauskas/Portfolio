@@ -1,10 +1,10 @@
-import Header from "../components/header";
-import Main from "../components/main";
+import Header from "../components/Header";
+import Main from "../components/Main";
 import initTranslations from "../i18n";
 import TranslationsProvider from "../components/TranslationsProvider";
-import About from "../components/about";
-import Skills from "../components/skills";
-import Projects from "../components/projects";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 const i18nNamespaces = ["home"];
 
