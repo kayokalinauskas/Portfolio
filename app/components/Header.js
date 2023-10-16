@@ -23,7 +23,7 @@ export default function Header() {
       <a className={styles.logo}>&lt;kayokalinauskas&gt;</a>
       <a className={styles["logo-short"]}>&lt;kalinauskas&gt;</a>
 
-      <div
+      <nav
         className={`${styles["nav-links"]} ${
           isNavMenuOpen ? styles.active : ""
         }`}
@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="#skills">{t("skills")}</Link>
         <Link href="#projects">{t("projects")}</Link>
         <Link href="mailto:kalinauskas@live.com">{t("contact")}</Link>
-      </div>
+      </nav>
       <div
         className={`${styles.hamburgerMenu} ${
           isNavMenuOpen ? styles.active : ""

@@ -1,9 +1,69 @@
 @use "./variables" as *;
 
 .about-section {
-  height: 50vh;
   display: flex;
+  min-height: 50vh;
   justify-content: center;
   align-items: center;
   background-color: $secondary-background-color;
+  padding: 30px 0px 30px 0px;
+}
+
+.profile-card-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-text-section p {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.profile-picture {
+  border: 5px solid $green;
+  border-radius: 100%;
+  padding: 4px;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.icons-div a {
+  margin-left: 30px;
+}
+
+.icons-div a:first-child {
+  margin-left: 0px;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-text-section {
+    margin-top: 30px;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .about-text-section p {
+    width: 85%;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
 }

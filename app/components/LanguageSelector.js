@@ -41,12 +41,12 @@ export default function LanguageSelector() {
     {
       value: "pt-BR",
       label: "Português",
-      flag: "./assets/br-flag.png",
+      flag: "/assets/br-flag.png",
     },
     {
       value: "en",
       label: "English",
-      flag: "./assets/uk-flag.png",
+      flag: "/assets/uk-flag.png",
     },
   ];
 

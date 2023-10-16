@@ -15,3 +15,22 @@ body {
   background-color: $background-color;
   min-height: 100vh;
 }
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-jetbrains);
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 55%;
+  height: 2px;
+  background-color: $green;
+  transform: translateX(-60%);
+  border-radius: 30px;
+  font-weight: 500;
+}
