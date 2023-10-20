@@ -4,4 +4,15 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(66, 51, 44);
+  flex-direction: column;
+}
+
+.teste {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.teste2 {
+  display: flex;
 }
