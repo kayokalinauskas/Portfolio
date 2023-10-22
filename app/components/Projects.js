@@ -21,7 +21,7 @@ export default function Projects() {
       conteudo: "LOREM3",
     },
     {
-      projeto: "Teste4",
+      projeto: "Teste54",
       imagem: "IMAGEM4",
       skills: "x4, y4 z4",
       conteudo: "LOREm4",
