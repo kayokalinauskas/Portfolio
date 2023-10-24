@@ -121,6 +121,7 @@
 @media (max-width: 580px) {
   .skill-section {
     min-height: 50vh;
+    padding: 30px;
   }
   .skills-cards-section {
     width: 100%;
@@ -131,12 +132,16 @@
   .skill-section {
     min-height: 50vh;
   }
+  .skills-cards-section {
+    gap: 0px;
+    width: 100%;
+  }
   .skill-card img {
     width: 32px;
     height: 32px;
   }
   .skill-card {
-    width: 60px;
-    height: 60px;
+    width: 92px;
+    height: 92px;
   }
 }
