@@ -1,36 +1,27 @@
 import styles from "../styles/projects.module.scss";
+import ProjectComponent from "./projectComponent";
 
 export default function Projects() {
   const data = [
     {
-      projeto: "Teste",
-      imagem: "IMAGEM",
-      skills: "x, y z",
-      conteudo: "LOREM",
+      projeto: "Personal Portfolio",
+      imagem: "https://i.imgur.com/Mz0fCrT.png",
+      skills: "Reactjs, Nextjs, Javascript, Tailwind.",
+      conteudo:
+        "Projeto de portfolio pessoal desenvolvido utilizando React, Nextjs, Javascript e Sass. Utilizando react-i18next para internacionalização.",
     },
     {
-      projeto: "Teste2",
-      imagem: "IMAGEM2",
-      skills: "x2, y2 z2",
-      conteudo: "LOREM2",
-    },
-    {
-      projeto: "Teste3",
-      imagem: "IMAGEM3",
-      skills: "x3, y3 z3",
-      conteudo: "LOREM3",
-    },
-    {
-      projeto: "Teste54",
-      imagem: "IMAGEM4",
-      skills: "x4, y4 z4",
-      conteudo: "LOREm4",
+      projeto: "Currency Converter",
+      imagem: "https://i.imgur.com/7RbLNTs.png",
+      skills: "Angular, HTML, CSS, Sass.",
+      conteudo:
+        "Este é um projeto em Angular que implementa um conversor de 3 moedas em Real.",
     },
   ];
   return (
     <div id="projects" className={styles["projects-section"]}>
       {/* <h1>Projects</h1> */}
-      {data.map((item, index) => (
+      {/* {data.map((item, index) => (
         <div className={styles.teste} key={index}>
           {index % 2 === 0 ? (
             <div className={styles.teste2}>
@@ -44,7 +35,10 @@ export default function Projects() {
             </div>
           )}
         </div>
-      ))}
+      ))} */}
+      {data.map((a) => {
+        return <ProjectComponent projectData={a} />;
+      })}
     </div>
   );
 }

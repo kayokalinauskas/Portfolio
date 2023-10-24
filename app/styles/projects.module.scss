@@ -1,9 +1,11 @@
+@use "../styles/_variables.scss" as *;
+
 .projects-section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(66, 51, 44);
+  background-color: $secondary-background-color;
   flex-direction: column;
 }
 

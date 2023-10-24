@@ -2,6 +2,7 @@
 
 .about-section {
   display: flex;
+
   min-height: 50vh;
   justify-content: center;
   align-items: center;
@@ -11,17 +12,49 @@
 
 .profile-card-section {
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
+.profile-card-section.active {
+  visibility: visible;
+  animation: profilecardanimate 0.8s ease 0s 1 forwards;
+}
+
+@keyframes profilecardanimate {
+  0% {
+    translate: 200px;
+    opacity: 0;
+  }
+  100% {
+    translate: 0px;
+    opacity: 1;
+  }
+}
+
 .about-text-section {
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+}
+.about-text-section.active {
+  visibility: visible;
+  animation: aboutanimate 0.8s ease 0s 1 forwards;
+}
+@keyframes aboutanimate {
+  0% {
+    translate: -200px;
+    opacity: 0;
+  }
+  100% {
+    translate: 0px;
+    opacity: 1;
+  }
 }
 
 .about-text-section p {

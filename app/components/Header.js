@@ -10,7 +10,6 @@ export default function Header() {
 
   const toggleMobileMenu = () => {
     setIsNavMenuOpen(!isNavMenuOpen);
-    console.log("teste");
   };
 
   const handleClickNav = () => {

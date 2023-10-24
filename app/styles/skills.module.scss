@@ -21,6 +21,7 @@
 
 .skill-card {
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,9 +40,28 @@
   transition: filter 0.2s ease-in;
 }
 
+.skill-card.active {
+  visibility: visible;
+  animation: bubble 0.8s ease 0s 1 forwards;
+}
+
+@keyframes bubble {
+  0% {
+    translate: -50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    translate: 0px;
+    opacity: 1;
+  }
+}
+
 @media (max-width: 779px) {
   .skills-cards-section {
-    width: 90%;
+    width: 100%;
   }
   .skill-card img {
     width: 48px;
@@ -51,9 +71,15 @@
     width: 80px;
     height: 80px;
   }
+  .skill-section {
+    min-height: 50vh;
+  }
 }
 
 @media (max-width: 580px) {
+  .skill-section {
+    min-height: 50vh;
+  }
   .skills-cards-section {
     width: 100%;
   }

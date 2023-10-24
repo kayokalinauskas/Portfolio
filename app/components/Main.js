@@ -1,10 +1,12 @@
+"use client";
+
 import styles from "../styles/main.module.scss";
 import Image from "next/image";
-import initTranslations from "../i18n";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 
-export default async function Main({ locale, namespaces }) {
-  const { t } = await initTranslations(locale, namespaces);
+export default function Main({ locale, namespaces }) {
+  const { t } = useTranslation();
   return (
     <section className={styles["main-section"]}>
       <div className={styles["presentation-div"]}>
@@ -26,7 +28,7 @@ export default async function Main({ locale, namespaces }) {
         <Image
           src="./assets/ProgrammerImage.svg"
           fill={true}
-          alt="Teste"
+          alt="Programmer hands typing"
           priority={true}
         />
       </div>
