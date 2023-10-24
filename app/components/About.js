@@ -33,6 +33,7 @@ export default function About() {
             href="https://www.linkedin.com/in/kayokalinauskas/"
           >
             <Image
+              className={styles["icon-image"]}
               width={40}
               height={40}
               src="/assets/linkedin.svg"
@@ -41,6 +42,7 @@ export default function About() {
           </Link>
           <Link target="_blank" href="https://github.com/kayokalinauskas/">
             <Image
+              className={styles["icon-image"]}
               width={40}
               height={40}
               src="/assets/github.svg"
@@ -49,6 +51,7 @@ export default function About() {
           </Link>
           <Link target="_blank" href="mailto:kalinauskas@live.com">
             <Image
+              className={styles["icon-image"]}
               width={40}
               height={40}
               src="/assets/email.svg"

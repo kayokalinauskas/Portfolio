@@ -3,10 +3,12 @@
 import Image from "next/image";
 import styles from "../styles/skills.module.scss";
 
-export default function SkillCard({ skill, inView }) {
+export default function SkillCard({ skill, inView, index }) {
   return (
     <div
-      className={`${styles["skill-card"]} ${inView ? styles["active"] : ""}`}
+      className={`${styles["skill-card"]} ${
+        inView ? styles[`active-${index}`] : ""
+      }`}
     >
       <Image
         width={72}

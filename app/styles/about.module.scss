@@ -2,7 +2,7 @@
 
 .about-section {
   display: flex;
-
+  overflow: hidden;
   min-height: 50vh;
   justify-content: center;
   align-items: center;
@@ -12,49 +12,32 @@
 
 .profile-card-section {
   display: flex;
-  visibility: hidden;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  opacity: 0;
   align-items: center;
+  transform: translate(100px);
 }
 
 .profile-card-section.active {
-  visibility: visible;
-  animation: profilecardanimate 0.8s ease 0s 1 forwards;
-}
-
-@keyframes profilecardanimate {
-  0% {
-    translate: 200px;
-    opacity: 0;
-  }
-  100% {
-    translate: 0px;
-    opacity: 1;
-  }
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  transform: translate(0px);
 }
 
 .about-text-section {
   display: flex;
-  visibility: hidden;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  transform: translate(-100px);
+  opacity: 0;
 }
 .about-text-section.active {
-  visibility: visible;
-  animation: aboutanimate 0.8s ease 0s 1 forwards;
-}
-@keyframes aboutanimate {
-  0% {
-    translate: -200px;
-    opacity: 0;
-  }
-  100% {
-    translate: 0px;
-    opacity: 1;
-  }
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  transform: translate(0px);
 }
 
 .about-text-section p {
@@ -81,6 +64,16 @@
 
 .icons-div a:first-child {
   margin-left: 0px;
+}
+
+.icon-image {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.icon-image:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 900px) {

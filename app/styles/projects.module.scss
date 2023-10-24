@@ -1,20 +1,14 @@
 @use "../styles/_variables.scss" as *;
 
 .projects-section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $secondary-background-color;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-.teste {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.teste2 {
-  display: flex;
+.projects-section main {
+  margin-top: 20px;
 }

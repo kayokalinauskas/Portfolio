@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 
 export default function Main({ locale, namespaces }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section className={styles["main-section"]}>
       <div className={styles["presentation-div"]}>
@@ -16,7 +16,7 @@ export default function Main({ locale, namespaces }) {
         <h2 className={styles.subtitle}>&lt;{t("frontenddev")}/&gt;</h2>
         <p className={styles.presentation}>{t("presentation")}</p>
         <Link
-          href={`/assets/CV-Kayo-Kalinauskas-${locale}.pdf`}
+          href={`/assets/CV-Kayo-Kalinauskas-${i18n.language}.pdf`}
           target="_blank"
         >
           <button className={styles["resume-button"]}>

@@ -1,8 +1,8 @@
 import styles from "../styles/projects.module.scss";
-import ProjectComponent from "./projectComponent";
+import ProjectComponent from "./ProjectComponent";
 
 export default function Projects() {
-  const data = [
+  const projects = [
     {
       projeto: "Personal Portfolio",
       imagem: "https://i.imgur.com/Mz0fCrT.png",
@@ -20,8 +20,9 @@ export default function Projects() {
   ];
   return (
     <div id="projects" className={styles["projects-section"]}>
-      {/* <h1>Projects</h1> */}
-      {/* {data.map((item, index) => (
+      <h1 className={"section-title"}>Projects</h1>
+      <main>
+        {/* {data.map((item, index) => (
         <div className={styles.teste} key={index}>
           {index % 2 === 0 ? (
             <div className={styles.teste2}>
@@ -36,9 +37,10 @@ export default function Projects() {
           )}
         </div>
       ))} */}
-      {data.map((a) => {
-        return <ProjectComponent projectData={a} />;
-      })}
+        {projects.map((project) => {
+          return <ProjectComponent projectData={project} />;
+        })}
+      </main>
     </div>
   );
 }
