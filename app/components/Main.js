@@ -26,7 +26,7 @@ export default function Main({ locale, namespaces }) {
       </div>
       <div className={styles["image-container"]}>
         <Image
-          src="./assets/ProgrammerImage.svg"
+          src="./assets/programming-animated.svg"
           fill={true}
           alt="Programmer hands typing"
           priority={true}

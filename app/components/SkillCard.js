@@ -6,7 +6,6 @@ import styles from "../styles/skills.module.scss";
 export default function SkillCard({ skill, inView, index }) {
   return (
     <div
-      key={index}
       className={`${styles["skill-card"]} ${
         inView ? styles[`active-${index}`] : ""
       }`}

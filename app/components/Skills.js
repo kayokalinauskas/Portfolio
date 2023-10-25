@@ -28,7 +28,14 @@ export default function Skills() {
       <h1 className={"section-title"}>Skills</h1>
       <div ref={ref} className={styles["skills-cards-section"]}>
         {technologies.map((technology, index) => {
-          return <SkillCard index={index} inView={inView} skill={technology} />;
+          return (
+            <SkillCard
+              key={index}
+              index={index}
+              inView={inView}
+              skill={technology}
+            />
+          );
         })}
         {/* <SkillCard inView={inView} skill={"Javascript"} />
         <SkillCard inView={inView} skill={"HTML"} />
