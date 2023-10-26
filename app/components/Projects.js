@@ -37,8 +37,13 @@ export default function Projects() {
           )}
         </div>
       ))} */}
-        {projects.map((project) => {
-          return <ProjectComponent projectData={project} />;
+        {projects.map((project, index) => {
+          return (
+            <ProjectComponent
+              key={`${project}-${index}`}
+              projectData={project}
+            />
+          );
         })}
       </main>
     </div>

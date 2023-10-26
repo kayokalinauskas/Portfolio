@@ -87,11 +87,11 @@ export default function LanguageSelector() {
         <span className={styles["arrow-down"]}></span>
       </div>
       <div className={styles.dropdown}>
-        {options.map((language) =>
+        {options.map((language, index) =>
           language.value !== currentLocale ? (
             <div
               id={language.value}
-              key={language.value}
+              key={`${language.value}-${index}`}
               className={styles.language}
               onClick={handleSelectLanguage}
             >

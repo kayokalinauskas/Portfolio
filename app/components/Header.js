@@ -3,7 +3,7 @@ import styles from "../styles/header.module.scss";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Link from "next/link";
-import LanguageChanger from "./LanguageSelector";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ export default function Header() {
         <div className={styles.hamburgerbar}></div>
         <div className={styles.hamburgerbar}></div>
       </div>
-      <LanguageChanger />
+      <LanguageSelector />
     </header>
   );
 }
