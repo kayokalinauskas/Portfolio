@@ -6,7 +6,7 @@ export default function Projects() {
     {
       projeto: "Personal Portfolio",
       imagem: "https://i.imgur.com/Mz0fCrT.png",
-      skills: "Reactjs, Nextjs, Javascript, Tailwind.",
+      skills: "Reactjs, Nextjs, Javascript.",
       conteudo:
         "Projeto de portfolio pessoal desenvolvido utilizando React, Nextjs, Javascript e Sass. Utilizando react-i18next para internacionalização.",
     },
@@ -22,21 +22,6 @@ export default function Projects() {
     <div id="projects" className={styles["projects-section"]}>
       <h1 className={"section-title"}>Projects</h1>
       <main>
-        {/* {data.map((item, index) => (
-        <div className={styles.teste} key={index}>
-          {index % 2 === 0 ? (
-            <div className={styles.teste2}>
-              <div>{item.projeto}</div>
-              <div>{item.skills}</div>
-            </div>
-          ) : (
-            <div className={styles.teste2}>
-              <div>{item.skills}</div>
-              <div>{item.projeto}</div>
-            </div>
-          )}
-        </div>
-      ))} */}
         {projects.map((project, index) => {
           return (
             <ProjectComponent

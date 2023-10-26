@@ -38,7 +38,6 @@
   margin-left: 50px;
   text-decoration: none;
   color: inherit;
-  // font-family: var(--font-jetbrains);
   font-weight: 500;
 }
 
@@ -131,7 +130,6 @@
   .hamburgerbar {
     border: solid 1px $primary-text;
     border-radius: 1px;
-    // width: 20px;
   }
 
   .hamburgerMenu.active .hamburgerbar:nth-of-type(1) {

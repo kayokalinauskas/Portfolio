@@ -37,17 +37,6 @@ export default function Skills() {
             />
           );
         })}
-        {/* <SkillCard inView={inView} skill={"Javascript"} />
-        <SkillCard inView={inView} skill={"HTML"} />
-        <SkillCard inView={inView} skill={"CSS"} />
-        <SkillCard inView={inView} skill={"React"} />
-        <SkillCard inView={inView} skill={"Typescript"} />
-        <SkillCard inView={inView} skill={"Next.js"} />
-        <SkillCard inView={inView} skill={"Angular"} />
-        <SkillCard inView={inView} skill={"Node.js"} />
-        <SkillCard inView={inView} skill={"Tailwind"} />
-        <SkillCard inView={inView} skill={"Sass"} />
-        <SkillCard inView={inView} skill={"Git"} /> */}
       </div>
     </section>
   );

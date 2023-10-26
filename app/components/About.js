@@ -5,9 +5,10 @@ import styles from "../styles/about.module.scss";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
-  // const [sectionAppeared, setSectionAppeared] = useState(false)
+  const { t, i18n } = useTranslation();
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -69,14 +70,10 @@ export default function About() {
           <h1 className={"section-title"}>About</h1>
         </div>
         <p>
-          Suspendisse a eros dolor. Proin vitae scelerisque augue, a convallis
-          urna. Vivamus magna leo, porta eget auctor vitae, hendrerit a felis.
-          Aliquam erat diam, luctus eget erat et, pulvinar hendrerit diam.
-          Praesent gravida sem nec nunc ultrices, ac dictum nulla facilisis.
-          Nunc vel consequat tellus, vitae varius mi. Pellentesque habitant
-          morbi tristique senectus et netus et malesuada fames ac turpis
-          egestas. Quisque vel interdum turpis. Aenean sit amet leo eu orci
-          placerat sagittis eu sed diam.
+          {t("aboutTextPartOne")}
+          <br />
+          <br />
+          {t("aboutTextPartTwo")}
         </p>
       </div>
     </section>
