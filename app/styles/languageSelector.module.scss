@@ -2,7 +2,7 @@
 
 .select {
   display: flex;
-  background-color: rgb(22, 22, 22);
+  background-color: $language-selector-background;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -43,7 +43,7 @@
   justify-content: flex-start;
   top: 65px;
   right: 20px;
-  background-color: rgb(22, 22, 22);
+  background-color: $language-selector-background;
 
   padding: 5px;
   border-radius: 10px;

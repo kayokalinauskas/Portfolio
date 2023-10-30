@@ -7,6 +7,7 @@
   color: $green;
   min-height: 60px;
   padding: 0px 30px 0px 30px;
+  z-index: 9;
 }
 
 .icons-div {
@@ -21,4 +22,10 @@
 .icon-image:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
+}
+
+@media (min-width: 600px) {
+  .footer-section {
+    display: none;
+  }
 }
