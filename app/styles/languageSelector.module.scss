@@ -2,17 +2,16 @@
 
 .select {
   display: flex;
-  background-color: $primary-text;
+  background-color: rgb(22, 22, 22);
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 5px;
-  flex: 33%;
-  color: $background-color;
-  font-weight: 400;
-  width: 133px;
+  color: #fff;
+  font-weight: 500;
+  width: 160px;
 }
 
 .selector {
@@ -32,7 +31,7 @@
   vertical-align: middle;
   border-style: solid;
   border-width: 4px 4px 0 4px;
-  border-color: $background-color transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
   margin: 0 0 0 5px;
 }
 
@@ -41,14 +40,21 @@
   position: absolute;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   top: 65px;
   right: 20px;
-  background-color: $primary-text;
+  background-color: rgb(22, 22, 22);
+
   padding: 5px;
   border-radius: 10px;
-  color: $background-color;
-  width: 133px;
+  color: #fff;
+
+  width: 160px;
   height: 42px;
+}
+
+.selector img {
+  margin: 0px 10px 0px 10px;
 }
 
 .selector.active .dropdown img {
@@ -60,7 +66,6 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
   cursor: pointer;
 }
 

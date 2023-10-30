@@ -37,20 +37,7 @@ export default function LanguageSelector() {
     router.refresh();
   };
 
-  const options = [
-    {
-      value: "pt-BR",
-      label: "Português",
-      flag: "/assets/br-flag.png",
-    },
-    {
-      value: "en",
-      label: "English",
-      flag: "/assets/uk-flag.png",
-    },
-  ];
-
-  const options2 = {
+  const languages = {
     "pt-BR": {
       value: "pt-BR",
       label: "Português",
@@ -65,6 +52,8 @@ export default function LanguageSelector() {
     },
   };
 
+  const languagesArray = Object.values(languages);
+
   const handleSelectorButton = () => {
     setSelectorIsOpen(!selectorIsOpen);
   };
@@ -77,17 +66,16 @@ export default function LanguageSelector() {
         <Image
           width={32}
           height={32}
-          alt={options2[currentLocale].alt}
-          src={options2[currentLocale].flag}
+          alt={languages[currentLocale].alt}
+          src={languages[currentLocale].flag}
         />
         <span className={styles["language-label"]}>
-          {options2[currentLocale].label}
+          {languages[currentLocale].label}
         </span>
-        <span>{options.forEach((option) => {})}</span>
         <span className={styles["arrow-down"]}></span>
       </div>
       <div className={styles.dropdown}>
-        {options.map((language, index) =>
+        {languagesArray.map((language, index) =>
           language.value !== currentLocale ? (
             <div
               id={language.value}
