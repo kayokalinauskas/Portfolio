@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../styles/skills.module.scss";
+import styles from "../../styles/skills.module.scss";
 import SkillCard from "./SkillCard";
 import { useInView } from "react-intersection-observer";
 

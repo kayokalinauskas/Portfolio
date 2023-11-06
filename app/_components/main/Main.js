@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../styles/main.module.scss";
+import styles from "../../styles/main.module.scss";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";

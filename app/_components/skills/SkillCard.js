@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../styles/skills.module.scss";
+import styles from "../../styles/skills.module.scss";
 
 export default function SkillCard({ skill, inView, index }) {
   return (

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import styles from "../styles/languageSelector.module.scss";
-import i18nConfig from "../../i18nConfig";
+import styles from "../../styles/languageSelector.module.scss";
+import i18nConfig from "../../../i18nConfig";
 import { useRouter } from "next/navigation";
 
 export default function LanguageSelector() {

@@ -15,6 +15,11 @@
   min-width: 300px;
 }
 
+.project-content .images-container {
+  display: flex;
+  gap: 10px;
+}
+
 @media (max-width: 1300px) {
   .project {
     flex-direction: column;

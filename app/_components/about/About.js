@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../styles/about.module.scss";
+import styles from "../../styles/about.module.scss";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";

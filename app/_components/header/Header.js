@@ -1,5 +1,5 @@
 "use client";
-import styles from "../styles/header.module.scss";
+import styles from "../../styles/header.module.scss";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Link from "next/link";

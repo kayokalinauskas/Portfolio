@@ -2,7 +2,7 @@
 
 import { I18nextProvider } from "react-i18next";
 import { useEffect, useState } from "react";
-import initTranslations from "../i18n";
+import initTranslations from "../../i18n";
 
 let i18n;
 

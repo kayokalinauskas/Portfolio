@@ -1,19 +1,19 @@
-import styles from "../styles/projects.module.scss";
+import styles from "../../styles/projects.module.scss";
 import ProjectComponent from "./ProjectComponent";
 
 export default function Projects() {
   const projects = [
     {
       projeto: "Personal Portfolio",
-      imagem: "https://i.imgur.com/Mz0fCrT.png",
-      skills: "Reactjs, Nextjs, Javascript.",
+      imagem: "/assets/projects/portfolio.png",
+      skills: ["React", "Next.js", "Javascript", "CSS"],
       conteudo:
         "Projeto de portfolio pessoal desenvolvido utilizando React, Nextjs, Javascript e Sass. Utilizando react-i18next para internacionalização.",
     },
     {
       projeto: "Currency Converter",
-      imagem: "https://i.imgur.com/7RbLNTs.png",
-      skills: "Angular, HTML, CSS, Sass.",
+      imagem: "/assets/projects/currency-converter.png",
+      skills: ["Angular", "HTML", "CSS", "Sass"],
       conteudo:
         "Este é um projeto em Angular que implementa um conversor de 3 moedas em Real.",
     },

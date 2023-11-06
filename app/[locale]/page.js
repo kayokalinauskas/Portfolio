@@ -1,12 +1,12 @@
-import Header from "../components/Header";
-import Main from "../components/Main";
+import Header from "../_components/header/Header";
+import Main from "../_components/main/Main";
 import initTranslations from "../i18n";
-import TranslationsProvider from "../components/TranslationsProvider";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Footer from "../components/Footer";
-import FloatingMedias from "../components/FloatingMedias";
+import TranslationsProvider from "../_components/utils/TranslationsProvider";
+import About from "../_components/about/About";
+import Skills from "../_components/skills/Skills";
+import Projects from "../_components/projects/Projects";
+import Footer from "../_components/footer/Footer";
+import FloatingMedias from "../_components/utils/FloatingMedias";
 
 const i18nNamespaces = ["home"];
 
