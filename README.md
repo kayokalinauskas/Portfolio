@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my personal portfolio built in React, using Next.js. I designed this portfolio to showcase my skills, projects, and experiences in a visually appealing and user-friendly manner.
 
 ## Getting Started
 
