@@ -6,7 +6,7 @@ import styles from "../../styles/skills.module.scss";
 import SkillCard from "./SkillCard";
 
 export default function Skills() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { ref, inView, entry } = useInView({
     triggerOnce: true,
     threshold: 0.5,

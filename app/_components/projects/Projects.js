@@ -6,7 +6,7 @@ import styles from "../../styles/projects.module.scss";
 import ProjectComponent from "./ProjectComponent";
 
 export default function Projects() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { ref, inView, entry } = useInView({
     threshold: 0.3,
     triggerOnce: true,

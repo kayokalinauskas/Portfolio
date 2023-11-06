@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 import styles from "../../styles/about.module.scss";
 
 export default function About() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
     triggerOnce: true,
