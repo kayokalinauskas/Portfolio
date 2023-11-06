@@ -19,8 +19,9 @@ export default function Header() {
   const { t } = useTranslation();
   return (
     <header className={styles.header}>
-      <a className={styles.logo}>&lt;kayokalinauskas&gt;</a>
-      <a className={styles["logo-short"]}>&lt;kalinauskas&gt;</a>
+      <Link href={"/"} className={styles.logo}>
+        &lt;/&gt;
+      </Link>
 
       <nav
         className={`${styles["nav-links"]} ${

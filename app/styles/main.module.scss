@@ -78,11 +78,12 @@
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .resume-button:hover {
   background-color: $green;
-  transition: background-color 0.1s ease;
+  transition: all 0.2s ease;
 }
 
 .image-container {

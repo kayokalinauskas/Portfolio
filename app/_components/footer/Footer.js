@@ -1,11 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import styles from "../../styles/footer.module.scss";
-import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className={styles["footer-section"]}>
-      <div className={styles["icons-div"]}>
+      {/* <div className={styles["icons-div"]}>
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/kayokalinauskas/"
@@ -37,7 +40,19 @@ export default function Footer() {
           />
         </Link>
       </div>
-      <p className={styles["footer-logo"]}>&lt;/kayokalinauskas&gt;</p>
+      <p className={styles["footer-logo"]}>&lt;/kayokalinauskas&gt;</p> */}
+
+      <p>
+        {t("footer")}
+        <br></br>
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/kayokalinauskas/"
+        >
+          {" "}
+          Kayo Kalinauskas
+        </Link>{" "}
+      </p>
     </footer>
   );
 }

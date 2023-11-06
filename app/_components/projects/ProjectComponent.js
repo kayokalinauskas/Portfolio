@@ -4,10 +4,14 @@ import Image from "next/image";
 import styles from "../../styles/projectsComponent.module.scss";
 import Link from "next/link";
 
-export default function ProjectComponent({ projectData }) {
+export default function ProjectComponent({ projectData, index }) {
   const skills = projectData.skills && projectData.skills.join(", ") + ".";
   return (
-    <section className={styles.project}>
+    <section
+      className={`${styles.project} ${
+        index % 2 === 0 ? styles.even : styles.odd
+      }`}
+    >
       <main className={styles["project-content"]}>
         <h1>{projectData.projeto}</h1>
         <article>{skills}</article>
@@ -27,7 +31,7 @@ export default function ProjectComponent({ projectData }) {
         </div>
         <div className={styles["buttons-container"]}>
           <Link target="_blank" href={projectData.demo}>
-            <button>Live Demo</button>
+            <button>Demo</button>
           </Link>
           <Link target="_blank" href={projectData.github}>
             <button>Github</button>
@@ -36,8 +40,8 @@ export default function ProjectComponent({ projectData }) {
       </main>
       <aside className={styles["project-image"]}>
         <Image
-          width={622}
-          height={350}
+          width={532}
+          height={300}
           src={projectData.imagem}
           alt={`${projectData.project} Demo Image`}
         />

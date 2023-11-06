@@ -6,7 +6,28 @@
   margin-top: 50px;
   min-width: 90%;
   overflow: hidden;
+  padding: 50px;
+  border-radius: 25px;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
 }
+
+.project:hover {
+  // background-color: #111111;
+  border-top: 1px solid $green;
+  // border-bottom: 1px solid $green;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+// .even {
+//   flex-direction: row;
+// }
+
+// .odd {
+//   flex-direction: row-reverse;
+// }
 
 .project-content {
   display: flex;
@@ -15,6 +36,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 300px;
+  margin: 0px 20px 0px 20px;
 }
 
 .project-content .skill-images-container {
@@ -22,12 +44,20 @@
   gap: 10px;
   margin-top: 10px;
 }
+
+.project-content .skill-images-container img {
+  border-radius: 30px;
+}
 .project-content .buttons-container {
   display: flex;
   width: 100%;
   align-items: center;
   gap: 10px;
   margin: 20px 0px 20px 0px;
+}
+
+.project-content article {
+  color: $grey;
 }
 .project-content .buttons-container button {
   height: 40px;
