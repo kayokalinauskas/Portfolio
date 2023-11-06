@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   min-width: 90%;
   overflow: hidden;
   padding: 50px;
@@ -18,7 +18,7 @@
   border-top: 1px solid $green;
   // border-bottom: 1px solid $green;
   cursor: pointer;
-  transform: translateY(-10px);
+  transform: translateY(-7px);
   transition: all 0.4s ease-in-out;
 }
 // .even {

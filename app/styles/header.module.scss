@@ -15,14 +15,6 @@
   flex: 33%;
 }
 
-.logo-short {
-  display: none;
-  color: $green;
-  font-weight: 500;
-  font-size: 1.2rem;
-  font-family: var(--font-jetbrains);
-}
-
 .header select {
   margin-left: 30px;
 }
@@ -43,7 +35,11 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  width: 100px;
+  width: 120px;
+  margin-left: 30px;
+  font-size: 1.1rem;
+  padding: 10px;
+  transition: all 0.4s ease;
 }
 
 .nav-links a:first-child {
@@ -55,8 +51,9 @@
 }
 
 .nav-links a:hover {
-  color: darken($color: $primary-text, $amount: 15);
-  transition: all 0.3s ease-in-out;
+  color: lighten($color: $primary-text, $amount: 50);
+  transform: translateY(-2px);
+  transition: all 0.4s ease;
   cursor: pointer;
 }
 
@@ -69,14 +66,6 @@
 }
 
 @media screen and (max-width: 799px) {
-  .logo-short {
-    display: block;
-    flex: 60%;
-  }
-  .logo {
-    display: none;
-  }
-
   .nav-links {
     display: none;
     visibility: hidden;
@@ -126,6 +115,7 @@
     font-size: 2rem;
     font-family: var(--font-poppins);
     font-weight: 800;
+    width: 100%;
   }
 
   .hamburgerMenu {

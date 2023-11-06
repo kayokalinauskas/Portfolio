@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import styles from "../../styles/footer.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "../../styles/footer.module.scss";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -41,7 +41,6 @@ export default function Footer() {
         </Link>
       </div>
       <p className={styles["footer-logo"]}>&lt;/kayokalinauskas&gt;</p> */}
-
       <p>
         {t("footer")}
         <br></br>

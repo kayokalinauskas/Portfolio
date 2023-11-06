@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 import styles from "../../styles/skills.module.scss";
 import SkillCard from "./SkillCard";
-import { useInView } from "react-intersection-observer";
 
 export default function Skills() {
   const { t, i18n } = useTranslation();

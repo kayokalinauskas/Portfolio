@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../../styles/projectsComponent.module.scss";
 import Link from "next/link";
+import styles from "../../styles/projectsComponent.module.scss";
 
 export default function ProjectComponent({ projectData, index }) {
   const skills = projectData.skills && projectData.skills.join(", ") + ".";

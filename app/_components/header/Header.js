@@ -1,8 +1,8 @@
 "use client";
-import styles from "../../styles/header.module.scss";
-import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "../../styles/header.module.scss";
 import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {

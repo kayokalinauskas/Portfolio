@@ -1,19 +1,16 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 import styles from "../../styles/projects.module.scss";
 import ProjectComponent from "./ProjectComponent";
-import { useInView } from "react-intersection-observer";
 
 export default function Projects() {
   const { t, i18n } = useTranslation();
   const { ref, inView, entry } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true,
   });
-
-  console.log(inView);
-
   const projects = [
     {
       projeto: "Personal Portfolio",

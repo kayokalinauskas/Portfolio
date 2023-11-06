@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../../styles/about.module.scss";
 import Link from "next/link";
-import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
+import styles from "../../styles/about.module.scss";
 
 export default function About() {
   const { t, i18n } = useTranslation();

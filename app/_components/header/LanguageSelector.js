@@ -1,10 +1,9 @@
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
-import styles from "../../styles/languageSelector.module.scss";
 import i18nConfig from "../../../i18nConfig";
-import { useRouter } from "next/navigation";
+import styles from "../../styles/languageSelector.module.scss";
 
 export default function LanguageSelector() {
   const [selectorIsOpen, setSelectorIsOpen] = useState(false);

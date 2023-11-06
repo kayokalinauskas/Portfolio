@@ -1,7 +1,6 @@
-import { JetBrains_Mono } from "next/font/google";
-import { Poppins } from "next/font/google";
-import styles from "../styles/global.scss";
+import { JetBrains_Mono, Poppins } from "next/font/google";
 import i18nConfig from "../../i18nConfig.js";
+import styles from "../styles/global.scss";
 
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));

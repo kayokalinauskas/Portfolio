@@ -1,9 +1,9 @@
 "use client";
 
-import styles from "../../styles/main.module.scss";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import styles from "../../styles/main.module.scss";
 
 export default function Main({ locale, namespaces }) {
   const { t, i18n } = useTranslation();
