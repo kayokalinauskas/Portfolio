@@ -24,7 +24,7 @@ export default function Projects() {
     {
       projeto: "Currency Converter",
       imagem: "/assets/projects/currency-converter.png",
-      skills: ["Angular", "HTML", "CSS", "Sass"],
+      skills: ["Angular", "Javascript", "Sass", "Docker"],
       github: "https://github.com/kayokalinauskas/currency-converter",
       demo: "https://kayokalinauskas.github.io/currency-converter/",
       conteudo:

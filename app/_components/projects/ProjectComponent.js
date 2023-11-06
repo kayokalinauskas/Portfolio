@@ -7,11 +7,7 @@ import styles from "../../styles/projectsComponent.module.scss";
 export default function ProjectComponent({ projectData, index }) {
   const skills = projectData.skills && projectData.skills.join(", ") + ".";
   return (
-    <section
-      className={`${styles.project} ${
-        index % 2 === 0 ? styles.even : styles.odd
-      }`}
-    >
+    <section className={`${styles.project}`}>
       <main className={styles["project-content"]}>
         <h1>{projectData.projeto}</h1>
         <article>{skills}</article>

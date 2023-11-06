@@ -10,25 +10,17 @@
   border-radius: 25px;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-width: 100vw;
 }
 
 .project:hover {
-  // background-color: #111111;
-  border-top: 1px solid $green;
-  // border-bottom: 1px solid $green;
+  border-top: 1px solid #fff;
   cursor: pointer;
-  transform: translateY(-7px);
-  transition: all 0.4s ease-in-out;
+  color: $green;
+  transform: translateY(-4px);
+  transition: all 0.3s ease-in-out;
 }
-// .even {
-//   flex-direction: row;
-// }
-
-// .odd {
-//   flex-direction: row-reverse;
-// }
-
 .project-content {
   display: flex;
   flex-direction: column;
@@ -78,15 +70,20 @@
 }
 @media (max-width: 1300px) {
   .project {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 0px;
+    max-width: 100%;
   }
 
   .project-content {
-    align-self: flex-start;
-    min-width: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons-container {
+    align-items: center;
+    justify-content: center;
   }
 }
 
