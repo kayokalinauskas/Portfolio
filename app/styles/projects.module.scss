@@ -4,8 +4,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
   background-color: $secondary-background-color;
   flex-direction: column;
   min-height: 100vh;
   padding: 60px;
+}
+
+.project {
+  transform: translateY(300px);
+  visibility: hidden;
+  opacity: 0;
+}
+.project.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 1s ease-in-out;
 }

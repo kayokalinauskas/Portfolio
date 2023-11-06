@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "../../styles/about.module.scss";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -67,7 +66,7 @@ export default function About() {
         }`}
       >
         <div>
-          <h1 className={"section-title"}>About</h1>
+          <h1 className={"section-title"}>{t("about")}</h1>
         </div>
         <p>
           {t("aboutTextPartOne")}

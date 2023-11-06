@@ -1,9 +1,11 @@
+@use "../styles/variables" as *;
 .project {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
   min-width: 90%;
+  overflow: hidden;
 }
 
 .project-content {
@@ -15,11 +17,35 @@
   min-width: 300px;
 }
 
-.project-content .images-container {
+.project-content .skill-images-container {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
-
+.project-content .buttons-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px 20px 0px;
+}
+.project-content .buttons-container button {
+  height: 40px;
+  width: 112px;
+  // padding: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $primary-text;
+  border-radius: 5px;
+  color: $primary-text;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.project-content .buttons-container button:hover {
+  background-color: $primary-text;
+  color: $background-color;
+  transition: all 0.2s ease;
+}
 @media (max-width: 1300px) {
   .project {
     flex-direction: column;
@@ -34,7 +60,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .project-image img {
     width: 354px;
     height: 200px;
