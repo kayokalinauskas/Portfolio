@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/projectsComponent.module.scss";
 
-export default function ProjectComponent({ projectData, index }) {
+export default function ProjectComponent({ projectData }) {
   const skills = projectData.skills && projectData.skills.join(", ") + ".";
   return (
     <section className={`${styles.project}`}>

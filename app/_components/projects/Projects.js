@@ -42,7 +42,6 @@ export default function Projects() {
             <ProjectComponent
               key={`${project}-${index}`}
               projectData={project}
-              index={index}
             />
           );
         })}
