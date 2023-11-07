@@ -1,6 +1,7 @@
 import { JetBrains_Mono, Poppins } from "next/font/google";
 import i18nConfig from "../../i18nConfig.js";
 import styles from "../styles/global.scss";
+import { Analytics } from "@vercel/analytics/react";
 
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
@@ -28,7 +29,10 @@ export const metadata = {
 export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale} className={`${jetbrains.variable} ${poppins.variable}`}>
-      <body className={styles.body}>{children}</body>
+      <body className={styles.body}>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }
