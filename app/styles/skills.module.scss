@@ -31,7 +31,7 @@
 }
 
 .skill-card img {
-  filter: grayscale(100%) opacity(60%);
+  filter: opacity(60%);
   transform: scale(1);
   margin-bottom: 10px;
   border-radius: 100%;
@@ -39,7 +39,7 @@
 }
 
 .skill-card img:hover {
-  filter: grayscale(0%) opacity(100%);
+  filter: opacity(100%);
   transform: scale(1.04);
   transition: all 0.2s ease-in-out;
 }

@@ -24,6 +24,7 @@ export default function Skills() {
     "Sass",
     "Git",
     "Docker",
+    "Jest",
   ];
 
   return (
