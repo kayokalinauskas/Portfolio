@@ -11,8 +11,8 @@ export default function SkillCard({ skill, inView, index }) {
       }`}
     >
       <Image
-        width={64}
-        height={64}
+        width={58}
+        height={58}
         src={`/assets/skills/${skill}.svg`}
         alt={`${skill} logo`}
         placeholder="blur"
