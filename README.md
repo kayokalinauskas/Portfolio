@@ -1,5 +1,5 @@
 ## Personal Portfolio
-This is my personal portfolio built in React, using Next.js, Sass and internationalization using react-i18next. 
+This is my personal portfolio built in React, using Next.js, Sass and internationalization using react-i18next. <br>
 I designed this portfolio to showcase my skills, projects, and experiences in a visually appealing and user-friendly manner.
 
 ![Portfolio Screenshot](https://i.imgur.com/Iem3aKK.png)
