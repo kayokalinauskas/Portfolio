@@ -33,7 +33,7 @@ export default function Projects() {
       imagem: "/assets/projects/satisfaction-survey-forms.png",
       skills: ["React", "Next.js", "Javascript", "Sass"],
       github: "https://github.com/kayokalinauskas/satisfaction-survey-forms",
-      demo: "https://teste-fidelimax.vercel.app/",
+      demo: "https://satisfaction-survey-forms.vercel.app/",
     },
   ];
   return (
