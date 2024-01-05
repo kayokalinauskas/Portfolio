@@ -36,7 +36,7 @@ export default function Projects() {
       demo: "https://satisfaction-survey-forms.vercel.app/",
     },
     {
-      projeto: "Todo list",
+      projeto: "To-do List",
       imagem: "/assets/projects/todo-list.png",
       skills: ["React", "Typescript"],
       github: "https://github.com/kayokalinauskas/todo-list",
