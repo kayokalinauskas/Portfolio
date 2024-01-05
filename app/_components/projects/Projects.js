@@ -35,6 +35,13 @@ export default function Projects() {
       github: "https://github.com/kayokalinauskas/satisfaction-survey-forms",
       demo: "https://satisfaction-survey-forms.vercel.app/",
     },
+    {
+      projeto: "Todo list",
+      imagem: "/assets/projects/todo-list.png",
+      skills: ["React", "Typescript"],
+      github: "https://github.com/kayokalinauskas/todo-list",
+      demo: "https://todo-list-six-teal.vercel.app/",
+    },
   ];
   return (
     <div ref={ref} id="projects" className={`${styles["projects-section"]}`}>
