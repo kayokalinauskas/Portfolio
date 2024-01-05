@@ -18,8 +18,6 @@ export default function Projects() {
       skills: ["React", "Next.js", "Javascript", "Sass"],
       github: "https://github.com/kayokalinauskas/Portfolio",
       demo: "https://portfolio-mwkfz6q40-kayokalinauskas.vercel.app/",
-      conteudo:
-        "Projeto de portfolio pessoal desenvolvido utilizando React, Nextjs, Javascript e Sass. Utilizando react-i18next para internacionalização.",
     },
     {
       projeto: "Currency Converter",
@@ -29,6 +27,13 @@ export default function Projects() {
       demo: "https://kayokalinauskas.github.io/currency-converter/",
       conteudo:
         "Este é um projeto em Angular que implementa um conversor de 3 moedas em Real.",
+    },
+    {
+      projeto: "Satisfaction Survey Form",
+      imagem: "/assets/projects/satisfaction-survey-forms.png",
+      skills: ["React", "Next.js", "Javascript", "Sass"],
+      github: "https://github.com/kayokalinauskas/satisfaction-survey-forms",
+      demo: "https://teste-fidelimax.vercel.app/",
     },
   ];
   return (
